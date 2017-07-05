@@ -1,0 +1,45 @@
+{
+  "name": "pkgbox",
+  "version": "0.0.0",
+  "description": "A CLI tool to manage package.json files",
+  "main": "cli.js",
+  "scripts": {
+    "test": "nyc mocha",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/israelroldan/pkgbox.git"
+  },
+  "keywords": [
+    "package.json",
+    "pkg",
+    "package",
+    "json",
+    "cli",
+    "command-line"
+  ],
+  "author": "Israel Roldan (pkgbox@isro.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/israelroldan/pkgbox/issues"
+  },
+  "homepage": "https://github.com/israelroldan/pkgbox#readme",
+  "devDependencies": {
+    "assertly": "^1.0.2",
+    "cz-conventional-changelog": "^2.0.0",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3",
+    "standard-version": "^4.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "jsonbox": "^0.9.9",
+    "phylo": "^1.0.0-beta.7",
+    "switchit": "^1.0.7"
+  }
+}
